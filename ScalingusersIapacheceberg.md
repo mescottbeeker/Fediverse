@@ -21,3 +21,12 @@ The stress tester sends HTTP requests to an ActivityPub server (e.g., to create 
    ```bash
    git clone https://github.com/your-username/activitypub-stress-tester.git
    cd activitypub-stress-tester
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1.40", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4"
+rand = "0.8"
+futures = "0.3"
